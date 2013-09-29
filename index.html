@@ -1,0 +1,50 @@
+<!-- AndyT html + css + javascript test page. -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="testpage.css" >
+		<title> This is the page title. You will not see this on the dom.</title>
+	</head>
+	<body>
+		<script src="testpage.js"></script>
+		<h3>This is a html + css + javascript test page.</h3>
+		<h4>Here is a heading 4.</h4>
+		<h5>Here is a heading 5.</h5>
+		<h6>Here is a heading 6.</h6>
+		<p>This is the  preamble that takes up the full screen width and is just a paragraph format.</p>
+		<div class="twocol">
+			<div class="rightjustify">
+				<p id="trial">This piece of text is a paragraph with an id of trial. 
+				As such, it can be controlled by the css with a # declaration 
+				or via the javascript. Last time I looked, the text size was set to large.</p>
+			</div>
+			<div class="leftjustify">
+				<form>
+					<input type="radio" name="radiobutton" onclick=myFunction() id="smallbutton" value="Small">Small<br>
+					<input type="radio" name="radiobutton" onclick=myFunction() id="largebutton" value="Large">Large<br>
+					<button type="button" onclick=myFunction()>Run myFunction().</button>
+				</form>
+			</div>
+		</div>
+		<div class="full">
+			<p>This is the follow-on text that needs to be full width and not overlapping with the sections above. 
+			To avoid the overlap, we need to use the clear property.</p>
+		</div>
+		<a href="http://www.google.com">Google link.</a>
+		<p class="myClass">More text 2. This bit is right justified.</p>
+		
+		<form action="">
+			<label>Form label.</label>
+			<input type="text" name="name">
+			<input type=submit value="button text"><br>
+			<input type="radio" name="radiobutton" value="radio1">Radio1<br>
+			<input type="radio" name="radiobutton" value="radio2">Radio2<br>
+			<input type="checkbox" name="checkboxbutton" value="chk1">Select this<br>
+		</form>
+		<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+			<input type="range" id="a" value="50">100
+			+<input type="number" id="b" value="50">
+			=<output name="x" for="a b"></output>
+		</form>
+	</body>
+</html>
